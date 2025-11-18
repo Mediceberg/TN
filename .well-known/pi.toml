@@ -1,0 +1,6 @@
+[[CURRENCIES]]
+code = "TN"
+issuer = "GBV7DATMFOK2DOR4RT6Y7S6TCKJJXA57TQHNWHPBXQ2MHNC3D36I2HSP"
+name = "TechNews"
+desc = "TechNews token on Pi Testnet."
+image = "https://technewsmed.netlify.app/token.png"
