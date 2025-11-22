@@ -1,228 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تك نيوز | التكنولوجيا، التمويل وأسواق العملات الرقمية</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
-    <style>
-        /* (استخدم نفس أنماط CSS المذكورة في ملف index.html وقم بتغيير اتجاه النص لـ rtl) */
-        /* لأغراض الإيجاز، لن يتم تكرار الـ CSS بالكامل هنا، ولكن يجب نسخ الأنماط من index.html */
-        
-        :root {
-            --primary-blue: #007bff; /* أزرق أساسي */
-            --secondary-vibrant: #50e3c2; /* أخضر للإبراز */
-            --background-dark: #1e1e2f; /* خلفية داكنة */
-            --card-dark: #27293d; /* خلفية البطاقات */
-            --text-light: #f8f8f8; /* لون النص الفاتح */
-            --text-dim: #b5b5c3; /* لون النص الخافت */
-            --success-color: #0bb783; 
-            --danger-color: #f64e60; 
-            --shadow-vibrant: 0 5px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        body {
-            font-family: 'Cairo', sans-serif;
-            background-color: var(--background-dark);
-            color: var(--text-light);
-            direction: rtl; /* اتجاه عربي */
-            text-align: right;
-            margin: 0; padding: 0; line-height: 1.8;
-        }
-
-        .navbar { justify-content: space-between; display: flex; align-items: center; }
-        .logo-section { display: flex; align-items: center; }
-        .logo-section img { margin-right: 0; margin-left: 10px; }
-        
-        .nav-links a { margin-left: 0; margin-right: 20px; } /* عكس الهوامش */
-        .lang-toggle { background-color: var(--secondary-vibrant) !important; color: #333 !important; }
-        .lang-toggle:hover { background-color: #38b29d; }
-
-        .cta-section { background: linear-gradient(135deg, #0056b3, var(--primary-blue)); }
-        
-        .main-content h2 { border-left: none; border-right: 5px solid var(--secondary-vibrant); padding-left: 0; padding-right: 15px; } /* عكس الشريط الجانبي */
-        .news-card { border-left: none; border-right: 5px solid var(--primary-blue); }
-        .news-card:hover { border-right: 5px solid var(--secondary-vibrant); }
-
-        .market-list h3 { border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-        table { text-align: right; }
-        th { text-align: right; }
-        
-        .reputa-card { direction: rtl; } /* للتأكيد */
-        .reputa-card img { margin-left: 15px; }
-        .reputa-card { border-left: none; border-right: 5px solid var(--secondary-vibrant); } /* عكس الشريط */
-        .reputa-content { text-align: right; }
-        .reputa-link { margin-top: 15px; display: inline-block; }
-        
-        .partnerships-section { background-color: var(--card-dark); }
-        .partner-card { direction: rtl; }
-        
-        /* تكرار نفس الـ CSS من index.html هنا */
-        /* ... */
-    </style>
-    <style>
-        /* CSS الكامل من index.html (تجنب التكرار في ردي) */
-        /* يرجى نسخ جميع أنماط CSS من ملف index.html ووضعها هنا */
-        /* ... (انسخها من الكود الإنجليزي) ... */
-        
-        /* الأنماط العربية الخاصة */
-        .main-content h2 {
-            border-left: none;
-            border-right: 5px solid var(--secondary-vibrant);
-            padding-left: 0;
-            padding-right: 15px;
-        }
-        .news-card {
-            border-left: none;
-            border-right: 5px solid var(--primary-blue);
-        }
-        .news-card:hover {
-            border-right: 5px solid var(--secondary-vibrant);
-        }
-        .reputa-card {
-            border-left: none;
-            border-right: 5px solid var(--secondary-vibrant);
-            flex-direction: row-reverse; /* لعكس ترتيب الشعار والنص */
-        }
-        .reputa-card img {
-             margin-right: 10px;
-        }
-        .market-list table th {
-            text-align: right;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <div class="container navbar">
-            <div class="logo-section">
-                <img src="1000004949.jpg" alt="شعار تك نيوز">
-                <h1>تك نيوز</h1>
-            </div>
-            <nav class="nav-links">
-                <a href="#">الرئيسية</a>
-                <a href="#markets">الأسواق</a>
-                <a href="#partnerships">الشراكات</a>
-                <a href="#news">الأخبار</a>
-                <a href="index.html" class="lang-toggle"><i class="fas fa-globe"></i> EN</a>
-            </nav>
-        </div>
-    </header>
-
-    <section class="cta-section">
-        <div class="container">
-            <h2>مستقبل التمويل، مدعوم بالتكنولوجيا.</h2>
-            <p>احصل على تحديثات فورية ومنسقة حول العملات الرقمية وأسواق الأسهم والتقنيات اللامركزية.</p>
-            
-            <a href="https://technewseaadcfd8835.pinet.com" target="_blank" class="cta-button">
-                <i class="fas fa-bolt"></i> تشغيل تطبيق تك نيوز على متصفح Pi
-            </a>
-        </div>
-    </section>
-
-    <div class="container main-content">
-        
-        <h2 id="markets">📊 بيانات الأسواق الحية والمؤشرات العالمية</h2>
-        <p style="color: var(--danger-color); font-style: italic;">ملاحظة: البيانات أدناه ثابتة (وهمية). استخدم تطبيقنا للحصول على تحديثات فورية.</p>
-
-        <section class="market-section">
-            
-            <div class="market-list">
-                <h3><i class="fas fa-coins"></i> أبرز العملات الرقمية (Crypto)</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>الأصل</th>
-                            <th>السعر ($)</th>
-                            <th>تغير 24 ساعة</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>بيتكوين (BTC)</td><td>$70,500.23</td><td class="change-up"><i class="fas fa-caret-up"></i> +1.56%</td></tr>
-                        <tr><td>إيثيريوم (ETH)</td><td>$4,120.78</td><td class="change-down"><i class="fas fa-caret-down"></i> -0.89%</td></tr>
-                        <tr><td>باي كوين (PI)</td><td>$35.50</td><td class="change-up"><i class="fas fa-caret-up"></i> +4.10%</td></tr>
-                        <tr><td>سولانا (SOL)</td><td>$152.45</td><td class="change-down"><i class="fas fa-caret-down"></i> -1.25%</td></tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="market-list">
-                <h3><i class="fas fa-chart-line"></i> مؤشرات الأسهم الرئيسية</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>المؤشر/السهم</th>
-                            <th>القيمة</th>
-                            <th>تغير اليوم</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>S&P 500</td><td>5,150.90</td><td class="change-up"><i class="fas fa-caret-up"></i> +0.45%</td></tr>
-                        <tr><td>Nasdaq</td><td>16,100.25</td><td class="change-down"><i class="fas fa-caret-down"></i> -0.12%</td></tr>
-                        <tr><td>Apple (AAPL)</td><td>$185.30</td><td class="change-up"><i class="fas fa-caret-up"></i> +1.15%</td></tr>
-                        <tr><td>Amazon (AMZN)</td><td>$178.65</td><td class="change-up"><i class="fas fa-caret-up"></i> +0.78%</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-        
-        <h2 id="partnerships">🤝 شراكات بيئية Pi</h2>
-        
-        <div class="reputa-card">
-            <img src="1000000219.png" alt="شعار ريبوتا">
-            <div class="reputa-content">
-                <h3>REPUTA SCORE: الائتمان اللامركزي</h3>
-                <p>
-                    **REPUTA** هو توكن يركز على قياس **السمعة والموثوقية**، مبني لتجارب الائتمان اللامركزي وطرائق التصنيف. تم إصداره على شبكة **Pi Testnet** لأغراض الاختبار والتكامل مع المحافظ و Pi DEX.
-                </p>
-                <a href="https://reputa3833.pinet.com" target="_blank" class="reputa-link">
-                    <i class="fas fa-arrow-left"></i> زيارة موقع REPUTA
-                </a>
-            </div>
-        </div>
-
-        <section class="partnerships-section">
-            <h3 style="color: var(--text-light); font-size: 1.8em; margin-bottom: 40px;">تطبيقات Pi المتكاملة</h3>
-            <div class="partnerships-grid">
-                
-                <a href="https://fastdeliveryaffd0592.pinet.com" target="_blank" class="partner-card">
-                    <i class="fas fa-shipping-fast"></i>
-                    <h4>FastDelivery</h4>
-                    <span>الخدمات اللوجستية والشحن</span>
-                </a>
-
-                <a href="https://trustlesscircle0036.pinet.com" target="_blank" class="partner-card">
-                    <i class="fas fa-users-cog"></i>
-                    <h4>Trustless Circle</h4>
-                    <span>الثقة اللامركزية</span>
-                </a>
-
-                <a href="https://smartpaybfdddefd7151.pinet.com" target="_blank" class="partner-card">
-                    <i class="fas fa-credit-card"></i>
-                    <h4>SmartPay</h4>
-                    <span>مدفوعات العملات الرقمية</span>
-                </a>
-
-            </div>
-        </section>
-
-        <h2 id="news">📰 أحدث العناوين الإخبارية</h2>
-        <div class="news-grid">
-            
-            <div class="news-card"><h4>العملات الرقمية: البيتكوين يكسر حاجز 70 ألف دولار - هل بدأت الموجة الصاعدة؟</h4><p>يُتوقع المحللون ارتفاعاً كبيراً بعد تبني المؤسسات لصناديق الاستثمار المتداولة الفورية. نظرة مفصلة على السوق.</p></div>
-            <div class="news-card"><h4>التكنولوجيا: جوجل تطلق Gemini 2.5 - قدرات جديدة للذكاء الاصطناعي</h4><p>مراجعة شاملة لقدرات نموذج الذكاء الاصطناعي الجديد في معالجة المحتوى المرئي والنصي والفيديوهات.</p></div>
-            <div class="news-card"><h4>التمويل: ترقب لتقرير التضخم الأمريكي - وتأثيره على المؤشرات العالمية</h4><p>نظرة اقتصادية على قرارات الاحتياطي الفيدرالي بشأن أسعار الفائدة وتأثيرها على أسواق الأسهم الرئيسية.</p></div>
-            <div class="news-card"><h4>شبكة Pi Network: الفريق الأساسي يقدم تحديثات حول الإطلاق المفتوح (Open Mainnet)</h4><p>إرشادات جديدة بخصوص إجراءات التوثيق (KYC) والتحضيرات الفنية للمرحلة المحورية التالية من الشبكة.</p></div>
-            
-        </div>
-
-    </div>
-
-    <footer>
-        <p>تك نيوز | مصدرك للاستخبارات التقنية والمالية &copy; 2025</p>
-    </footer>
-
-</body>
-</html>
