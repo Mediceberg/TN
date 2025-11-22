@@ -1,31 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>TechNews (TN) Token</title>
-  <style>
-    body {
-      background: #0d1117;
-      color: #fff;
-      font-family: Arial;
-      text-align: center;
-      padding: 50px;
-    }
-    .box {
-      background: #161b22;
-      padding: 20px;
-      margin: auto;
-      border-radius: 12px;
-      width: 90%;
-      max-width: 500px;
-    }
-    h1 { color: #4db5ff; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNews | أخبار التكنولوجيا والعملات الرقمية</title>
+    <style>
+        /* الأنماط الأساسية */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+            line-height: 1.6;
+        }
+
+        /* الرأس (Header) */
+        header {
+            background-color: #007bff; /* لون أزرق جذاب */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 5px;
+        }
+
+        /* حاوية المحتوى الرئيسي */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        /* قسم الأخبار (News Section) */
+        .news-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .news-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-card h3 {
+            color: #007bff;
+            padding: 15px;
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .news-card p {
+            padding: 0 15px 15px;
+        }
+
+        /* زر التحويل إلى تطبيق Pi Browser */
+        .pi-browser-cta {
+            text-align: center;
+            margin: 40px 0;
+            background-color: #ffd700; /* لون ذهبي مميز للفت الانتباه */
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .pi-browser-cta a {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .pi-browser-cta a:hover {
+            background-color: #0056b3;
+        }
+
+        /* قسم REPUTA */
+        .reputa-section {
+            background-color: #e6f0ff; /* خلفية فاتحة لقسم REPUTA */
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border: 1px solid #b3ccff;
+        }
+
+        .reputa-section h2 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .reputa-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .reputa-card a {
+            display: block;
+            margin-top: 15px;
+            color: #28a745; /* لون أخضر للرابط */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .reputa-card a:hover {
+            text-decoration: underline;
+        }
+        
+        /* التذييل (Footer) */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-  <div class="box">
-    <h1>Welcome to TechNews (TN)</h1>
-    <p>The official home domain for the TN Token on Pi Network Testnet.</p>
-  </div>
+
+    <header>
+        <h1>TechNews 📰</h1>
+        <p>أحدث أخبار التكنولوجيا، الأسواق المالية والعملات الرقمية</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="pi-browser-cta">
+            <p style="font-size: 1.3em; font-weight: bold;">انتقل مباشرة إلى تطبيق TechNews الرسمي!</p>
+            <a href="pi://technewseaadcfd8835.pinet.com">
+                🚀 افتح TechNews في متصفح Pi Browser 
+            </a>
+            <p style="margin-top: 10px; font-size: 0.9em;">(هذا الزر يعمل داخل متصفح Pi Browser فقط)</p>
+        </div>
+
+        <hr>
+
+        <div class="reputa-section">
+            <h2>شريكنا: مشروع REPUTA SCORE 🔗</h2>
+            <div class="reputa-card">
+                <h3>ما هو REPUTA SCORE؟</h3>
+                <p>
+                    **REPUTA** هو توكن يركز على قياس **السمعة والموثوقية**، مبني لتجارب الائتمان اللامركزي وطرائق التصنيف. تم إصدار التوكن على **شبكة Pi Testnet** لأغراض الاختبار والتكامل مع المحافظ و Pi DEX. يهدف المشروع إلى بناء نظام ثقة لا مركزي.
+                </p>
+                <a href="https://reputa3833.pinet.com" target="_blank">
+                    <span style="font-size: 1.5em;">👤</span> تصفح موقع REPUTA
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>🔥 أحدث الأخبار التقنية والمالية</h2>
+        <div class="news-section">
+            
+            <div class="news-card">
+                <h3>العملات الرقمية: ارتفاع جنوني لعملة البيتكوين</h3>
+                <p>شهد سوق العملات الرقمية قفزة غير مسبوقة في سعر البيتكوين بعد إعلان مؤسسات مالية كبرى عن خططها للاستثمار في صناديق ETF. تحليل للتوقعات المستقبلية.</p>
+            </div>
+            
+            <div class="news-card">
+                <h3>التكنولوجيا: إطلاق الجيل الجديد من الذكاء الاصطناعي</h3>
+                <p>كشفت شركة تكنولوجية عملاقة عن نموذجها الجديد للذكاء الاصطناعي القادر على إنشاء محتوى مرئي وكتابي بدقة مذهلة. تعرف على أبرز ميزات النموذج.</p>
+            </div>
+            
+            <div class="news-card">
+                <h3>الأسواق المالية: تأثير الفائدة الأمريكية على مؤشرات الأسهم</h3>
+                <p>قرارات الاحتياطي الفيدرالي الأخيرة بشأن أسعار الفائدة تلقي بظلالها على مؤشرات الأسهم العالمية. نظرة متعمقة على القطاعات الأكثر تأثراً.</p>
+            </div>
+
+            <div class="news-card">
+                <h3>شبكة Pi Network: تحديثات هامة حول فترة الإغلاق</h3>
+                <p>تم نشر إرشادات جديدة من فريق Pi Core Team تتعلق بعمليات التوثيق (KYC) وتحضيرات الشبكة للمرحلة القادمة. تفاصيل إضافية حول التحديثات التقنية.</p>
+            </div>
+
+        </div>
+
+        </div>
+
+    <footer>
+        <p>&copy; 2025 TechNews. جميع الحقوق محفوظة.</p>
+    </footer>
+
 </body>
 </html>
