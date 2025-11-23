@@ -81,7 +81,8 @@ body[dir="rtl"] .market-list h3, body[dir="rtl"] .main-content h2{border-right:n
 <header>
  <div class="container navbar">
    <div class="logo-section">
-     <img id="siteLogo" src="https://mediceberg.github.io/RP/logo.png" alt="TechNews Logo">
+     <!-- شعار TechNews صحيح -->
+     <img id="siteLogo" src="https://mediceberg.github.io/RP/technews-logo.png" alt="TechNews Logo">
      <h1 id="siteTitle">TechNews</h1>
    </div>
    <nav class="nav-links">
@@ -130,6 +131,7 @@ body[dir="rtl"] .market-list h3, body[dir="rtl"] .main-content h2{border-right:n
 <h2 id="partnersTitle">🤝 Pi Ecosystem Partners</h2>
 
 <div class="reputa-card fade-in">
+  <!-- بطاقة REPUTA مستقلة -->
   <img id="reputaLogo" src="https://mediceberg.github.io/RP/logo.png">
   <div class="reputa-content">
     <h3 id="reputaTitle">REPUTA SCORE: Decentralized Reputation</h3>
@@ -224,7 +226,6 @@ langBtn.addEventListener('click',()=>{
   currentLang = currentLang==='en'?'ar':'en';
   document.body.dir = currentLang==='ar'?'rtl':'ltr';
   langBtn.textContent = currentLang==='en'?'AR':'EN';
-  // header links
   document.querySelectorAll('.nav-links a[data-key]').forEach(a=>{
     const key=a.getAttribute('data-key'); a.textContent=texts[currentLang][key];
   });
@@ -240,7 +241,6 @@ langBtn.addEventListener('click',()=>{
   document.getElementById('reputaDesc').textContent=texts[currentLang].reputaDesc;
   document.getElementById('reputaBtn').textContent=texts[currentLang].reputaBtn;
   document.getElementById('newsTitle').textContent=texts[currentLang].newsTitle;
-  // news cards
   document.querySelectorAll('.news-card').forEach(card=>{
     card.querySelector('h4').textContent = card.getAttribute(`data-${currentLang}-title`);
     card.querySelector('p').textContent = card.getAttribute(`data-${currentLang}-desc`);
